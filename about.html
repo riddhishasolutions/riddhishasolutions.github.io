@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Riddhisha Solutions</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Riddhisha Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png">
 </head>
 <body>
-    <header>
-        <div class="logo">RIDDHISHA SOLUTIONS</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="Riddhisha Solutions" class="logo-image" />
+        <div class="tag">Solutions</div>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary">Get Quote</a>
+    </div>
+  </header>
 
-    <section class="content">
-        <h1>About Riddhisha Solutions</h1>
-        <p>Riddhisha Solutions is an IT service provider delivering Google Workspace, Microsoft 365 licensing, Domain registration, SSL Certificates, Cloud hosting and various digital business solutions.</p>
-        <p>Our mission is to provide secure, affordable and efficient IT solutions to companies of all sizes.</p>
+  <main class="container content">
+    <section class="about-top">
+      <h1>About Riddhisha Solutions</h1>
+      <p class="lead">We are an IT services company focused on cloud licensing, secure email, domain services and hosting. Our goal is to make enterprise-grade tools affordable for small and medium businesses.</p>
     </section>
 
-    <footer>
-        <p>© 2025 Riddhisha Solutions. All Rights Reserved.</p>
-    </footer>
+    <section class="team-grid">
+      <div class="card glass">
+        <h3>Our Mission</h3>
+        <p>Deliver secure, reliable and cost-effective cloud services with exceptional support.</p>
+      </div>
+      <div class="card glass">
+        <h3>Our Approach</h3>
+        <p>Assessment → Migration → Setup → Support. Transparent pricing and SLA-based support.</p>
+      </div>
+      <div class="card glass">
+        <h3>Why Choose Us</h3>
+        <ul>
+          <li>Authorized resellers for Google Workspace & Microsoft 365</li>
+          <li>Fast domain and SSL provisioning</li>
+          <li>24/7 technical support</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Riddhisha Solutions</strong>
+        <div class="muted">Google Workspace • Microsoft 365 • Domains • Hosting</div>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="container copyright">© 2025 Riddhisha Solutions. All rights reserved.</div>
+  </footer>
 </body>
 </html>
