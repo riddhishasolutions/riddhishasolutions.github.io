@@ -1,0 +1,221 @@
+<!-- ========================= index.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riddhisha Solutions — IT Services & Cloud</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/riddhishasolutions/riddhishasolutions.github.io/main/logo.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-wrap">
+      <img src="https://raw.githubusercontent.com/riddhishasolutions/riddhishasolutions.github.io/main/logo.png" class="logo" />
+      <h1>RIDDHISHA SOLUTIONS</h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Empowering Businesses with Future-Ready Technology</h2>
+    <p>Cloud, IT Infrastructure, Cybersecurity, and Managed Services for all business needs.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+
+      <div class="service-card">
+        <h3>Google Workspace</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Google_Workspace_Logo.png" class="vendor-logo" />
+        <p>Business email, cloud storage & collaboration tools.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Microsoft 365</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" class="vendor-logo" />
+        <p>Enterprise productivity suite and cloud solutions.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Domain Registration & DNS</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/5969/5969057.png" class="vendor-logo" />
+        <p>Register domains, manage DNS, and host services.</p>
+        <a href="https://store.riddhishasolutions.com" target="_blank" class="buy-now">Buy Now</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Titan Email</h3>
+        <img src="https://cdn.worldvectorlogo.com/logos/titan-email.svg" class="vendor-logo" />
+        <p>Premium business-class email hosting.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>GoDaddy Services</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/GoDaddy_Logo.svg" class="vendor-logo" />
+        <p>Domains • Hosting • SSL • Business Email</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Riddhisha Solutions delivers enterprise-grade cloud and IT solutions with reliability and performance.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@riddhishasolutions.com</p>
+    <p>Address: Mumbai, Maharashtra, India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Riddhisha Solutions. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+<!-- ========================= style.css ========================= -->
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #0ff;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 45px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #0ff;
+  border-bottom: 2px solid #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+.hero h2 {
+  font-size: 42px;
+  color: #0ff;
+  text-shadow: 0 0 15px #0ff;
+}
+.hero p {
+  color: #ccc;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* SERVICES */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+.services h2 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: #0ff;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+.service-card {
+  background: #111;
+  border: 1px solid #0ff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0ff;
+}
+.vendor-logo {
+  height: 40px;
+  margin: 10px 0;
+}
+.buy-now {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  background: #0ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.buy-now:hover {
+  background: #55ffff;
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+.about h2 {
+  color: #0ff;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px 20px;
+  background: #111;
+  text-align: center;
+}
+.contact h2 {
+  color: #0ff;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #0ff;
+}
