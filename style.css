@@ -1,24 +1,26 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   background-color: #0D0D0D;
   color: #FFFFFF;
 }
 
-header.hero {
+/* Hero */
+.hero {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   background: linear-gradient(135deg, #00FFFF 0%, #FF00FF 100%);
   color: #0D0D0D;
 }
 
-header.hero h1 {
-  font-size: 3rem;
+.hero h1 {
+  font-size: 3.5rem;
   margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #00FFFF;
 }
 
-header.hero p {
-  font-size: 1.2rem;
+.hero .tagline {
+  font-size: 1.3rem;
   margin-bottom: 1.5rem;
 }
 
@@ -30,16 +32,17 @@ header.hero p {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  box-shadow: 0 0 10px #00FFFF;
+  box-shadow: 0 0 15px #00FFFF;
   transition: all 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #00FFFF;
   color: #0D0D0D;
-  box-shadow: 0 0 20px #00FFFF;
+  box-shadow: 0 0 25px #00FFFF;
 }
 
+/* Sections */
 section {
   padding: 3rem 2rem;
   text-align: center;
@@ -48,6 +51,18 @@ section {
 section h2 {
   color: #00FFFF;
   margin-bottom: 1rem;
+  text-shadow: 0 0 10px #FF00FF;
+}
+
+.service-group {
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.service-group h3 {
+  color: #FF00FF;
+  margin-bottom: 0.5rem;
 }
 
 ul {
@@ -58,25 +73,56 @@ ul {
 ul li {
   margin: 0.5rem 0;
   font-size: 1.1rem;
+  transition: transform 0.3s ease;
 }
 
-a {
-  color: #FF00FF;
+ul li:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #00FFFF;
+}
+
+/* Buy Now Section */
+.buy-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+}
+
+.buy-services {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  color: #FFFFFF;
+  text-shadow: 0 0 8px #00FFFF;
+}
+
+.buy-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0D0D0D;
+  background: linear-gradient(90deg, #00FFFF, #FF00FF);
+  border: none;
+  border-radius: 50px;
   text-decoration: none;
+  box-shadow: 0 0 20px #00FFFF, 0 0 20px #FF00FF;
+  transition: all 0.3s ease;
 }
 
-a:hover {
-  text-shadow: 0 0 5px #FF00FF;
+.buy-button:hover {
+  background: linear-gradient(90deg, #FF00FF, #00FFFF);
+  color: #fff;
+  box-shadow: 0 0 30px #FF00FF, 0 0 30px #00FFFF;
+  transform: scale(1.1);
 }
 
+/* Footer */
 footer {
   background-color: #1A1A1A;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
   color: #AAAAAA;
-}
-
-.form-container {
-  margin-top: 2rem;
 }
