@@ -1,17 +1,82 @@
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0D0D0D;
+  color: #FFFFFF;
 }
 
-header h1 {
+header.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #00FFFF 0%, #FF00FF 100%);
+  color: #0D0D0D;
+}
+
+header.hero h1 {
   font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #0D0D0D;
+  color: #00FFFF;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #00FFFF;
+  text-decoration: none;
   font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00FFFF;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00FFFF;
+  color: #0D0D0D;
+  box-shadow: 0 0 20px #00FFFF;
+}
+
+section {
+  padding: 3rem 2rem;
+  text-align: center;
 }
 
 section h2 {
-  font-weight: 600;
+  color: #00FFFF;
   margin-bottom: 1rem;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+a {
+  color: #FF00FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 5px #FF00FF;
+}
+
 footer {
+  background-color: #1A1A1A;
+  text-align: center;
+  padding: 1rem;
   font-size: 0.9rem;
+  color: #AAAAAA;
+}
+
+.form-container {
+  margin-top: 2rem;
 }
